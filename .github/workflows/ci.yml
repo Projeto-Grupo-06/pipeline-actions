@@ -2,7 +2,10 @@ name: workflow de CI
 
 on:
   pull_request:
-    branches: ["main"]
+    branches:
+      - main
+      - develop
+    types: [opened, reopened, synchronize]
 
 jobs:
   build:
