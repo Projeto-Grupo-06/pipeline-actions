@@ -1,11 +1,9 @@
 name: workflow de CI
 
 on:
-  pull_request:
+  push: # Nesse caso, vou considerar que o deploy será feito quando um push for feito na branch main
     branches:
       - main
-      - develop
-    types: [opened, reopened]
 
 jobs:
   build:
