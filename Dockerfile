@@ -5,8 +5,7 @@ WORKDIR /build
 
 COPY . .
 
-RUN mvn clean package -DskipTests -Dcheckstyle.skip=true
-
+RUN mvn clean package -DskipTests
 FROM openjdk:17-slim
 
 WORKDIR /app
