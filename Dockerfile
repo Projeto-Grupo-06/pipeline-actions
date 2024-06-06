@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:latest AS builder
 LABEL authors="DenilsonReis"
 
 WORKDIR /build
