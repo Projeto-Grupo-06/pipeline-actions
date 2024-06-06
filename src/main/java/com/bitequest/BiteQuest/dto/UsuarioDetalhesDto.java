@@ -59,3 +59,4 @@ public class UsuarioDetalhesDto implements UserDetails {
         return true;
     }
 }
+
