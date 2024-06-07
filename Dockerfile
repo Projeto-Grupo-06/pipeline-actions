@@ -1,11 +1,11 @@
-FROM amazoncorretto:17-alpine3.17-jdk AS builder
+FROM maven:3-openjdk-17 AS builder
 LABEL authors="DenilsonReis"
 
 WORKDIR /build
 
 COPY . .
 
-RUN mvn clean package -DskipTests=true
+RUN mvn clean package -DskipTests
 
 FROM openjdk:17-slim
 
