@@ -1,4 +1,4 @@
-FROM ubuntu:latest AS builder
+FROM amazoncorreto:17-alpine3.15-jdk AS builder
 LABEL authors="DenilsonReis"
 
 WORKDIR /build
