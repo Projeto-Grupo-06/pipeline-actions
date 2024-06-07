@@ -1,4 +1,4 @@
-FROM amazoncorreto:17-alpine3.15-jdk AS builder
+FROM amazoncorretto:17-alpine3.17-jdk AS builder
 LABEL authors="DenilsonReis"
 
 WORKDIR /build
